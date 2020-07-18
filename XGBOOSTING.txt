@@ -1,0 +1,14 @@
+BOOSTING :  The term ‘Boosting’ refers to a family of algorithms which converts weak learner to strong learners.
+
+2. Gradient Boosting: Similar to all boosting methods, Gradient Boosting looks to consecutively reduce error with each consecutive model, until one final model is produced. Given a set of data observations, Gradient Boosting fits a simple, weak learner to predict outcomes. Then, from this weak model, a loss function is plotted. There are various loss functions we can use in machine learning, but the ultimate goal of each loss function is to reduce error. Next, the two plots?—?the original data plot and the loss function?—?are combined to make a stronger predictor. The sum of our predictors gets stronger and stronger after each step. This process is repeated until a final predictor is built. Take the diagram below. The “Ground Truth” plots a set of data, with a line running through each of the points.
+
+
+“Tree 1” is a best-fit-line of the data. “Tree 2” is a curve that plots the errors from the graph in “Tree 1”. These errors are based on how “Tree 1” misrepresented the original plot (“Ground truth” in this case). Finally, “Tree 3” is a combination of ‘Tree 1’ and ‘Tree 2’. This is the cycle of one weak learner in Gradient Boosting. By combining weak learner after weak learner, our final model is able to account for a lot of the error from the original model and reduces this error over time.
+
+Gradient Boosting gets its name from Gradient Descent. Given the predetermined loss function, Gradient Descent is utilized to find the parameters which minimize this loss function. Initially, gradient descent uses some parameters to looks at each point along the loss function, and find the negative derivative of that point. As gradient descent continues along the loss function, it continuously tunes the parameters until the minimum point is found. The goal is to find the optimal parameters which have the biggest decrease on the loss function. This is how Gradient Boosting attempts to minimize error. By sequentially minimizing our loss function (meaning we are sequentially minimizing the amount of error with each weak learner), our model gets stronger and stronger until a final predictor is found.
+
+XGBoosting
+In the realm of data science, machine learning algorithms, and model building, the ultimate goal is to build the strongest predictive model while accounting for computational efficiency as well. This is where XGBoosting comes into play. XGBoost (eXtreme Gradient Boosting) is a direct application of Gradient Boosting for decision trees. There are a myriad of resources that dive into the mathematical backing and systematic functions of XGBoost, but the main advantages are as follows:
+
+
+
